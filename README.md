@@ -496,4 +496,4 @@ pragma solidity ^0.5.0;
      function decimals() public view returns (uint8) {
        return _decimals;
      }
-##}
+}
