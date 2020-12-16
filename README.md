@@ -1,7 +1,7 @@
 ### Contract Source Code (Solidity)
 
 /** <br/>
- *Submitted for verification at Etherscan.io on 2020-10-09<br/>
+ *<nbsp;>Submitted for verification at Etherscan.io on 2020-10-09<br/>
  */
 
 pragma solidity ^0.5.0;
