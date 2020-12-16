@@ -87,19 +87,19 @@ interface IERC20 {
 
 pragma solidity ^0.5.0;
 
-/**
- *@dev Wrappers over Solidity's arithmetic operations with added overflow
- *checks.
- *
- *Arithmetic operations in Solidity wrap on overflow. This can easily result
- *in bugs, because programmers usually assume that an overflow raises an
- *error, which is the standard behavior in high level programming languages.
- *`SafeMath` restores this intuition by reverting the transaction when an
- *operation overflows.
- *
- *Using this library instead of the unchecked operations eliminates an entire
- *class of bugs, so it's recommended to use it always.
- */
+/** <br/>
+ *@dev Wrappers over Solidity's arithmetic operations with added overflow<br/>
+ *checks.<br/>
+ *<br/>
+ *Arithmetic operations in Solidity wrap on overflow. This can easily result<br/>
+ *in bugs, because programmers usually assume that an overflow raises an<br/>
+ *error, which is the standard behavior in high level programming languages.<br/>
+ *`SafeMath` restores this intuition by reverting the transaction when an<br/>
+ *operation overflows.<br/>
+ *<br/>
+ *Using this library instead of the unchecked operations eliminates an entire<br/>
+ *class of bugs, so it's recommended to use it always.<br/>
+ */<br/>
  
 library SafeMath {
 
@@ -199,32 +199,32 @@ library SafeMath {
 
 pragma solidity ^0.5.0;
 
-
-
-/**
- *@dev Implementation of the `IERC20` interface.
- *
- *This implementation is agnostic to the way tokens are created. This means
- *that a supply mechanism has to be added in a derived contract using `_mint`.
- *For a generic mechanism see `ERC20Mintable`.
- *
- **For a detailed writeup see our guide [How to implement supply
- *mechanisms](https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226).*
- *
- *We have followed general OpenZeppelin guidelines: functions revert instead
- *of returning `false` on failure. This behavior is nonetheless conventional
- *and does not conflict with the expectations of ERC20 applications.
- *
- *Additionally, an `Approval` event is emitted on calls to `transferFrom`.
- *This allows applications to reconstruct the allowance for all accounts just
- *by listening to said events. Other implementations of the EIP may not emit
- *these events, as it isn't required by the specification.
- *
- *Finally, the non-standard `decreaseAllowance` and `increaseAllowance`
- *functions have been added to mitigate the well-known issues around setting
- *allowances. See `IERC20.approve`.
- */
+/** <br/>
+ *@dev Implementation of the `IERC20` interface.<br/>
+ *<br/>
+ *This implementation is agnostic to the way tokens are created. This means<br/>
+ *that a supply mechanism has to be added in a derived contract using `_mint`.<br/>
+ *For a generic mechanism see `ERC20Mintable`.<br/>
+ *<br/>
+ *For a detailed writeup see our guide [How to implement supply<br/>
+ *mechanisms](https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226).<br/>
+ *<br/>
+ *We have followed general OpenZeppelin guidelines: functions revert instead<br/>
+ *of returning `false` on failure. This behavior is nonetheless conventional<br/>
+ *and does not conflict with the expectations of ERC20 applications.<br/>
+ *<br/>
+ *Additionally, an `Approval` event is emitted on calls to `transferFrom`.<br/>
+ *This allows applications to reconstruct the allowance for all accounts just<br/>
+ *by listening to said events. Other implementations of the EIP may not emit<br/>
+ *these events, as it isn't required by the specification.<br/>
+ *<br/>
+ *Finally, the non-standard `decreaseAllowance` and `increaseAllowance`<br/>
+ *functions have been added to mitigate the well-known issues around setting<br/>
+ *allowances. See `IERC20.approve`.<br/>
+ */<br/>
+ 
 contract ERC20 is IERC20 {
+
     using SafeMath for uint256;
 
     mapping (address => uint256) private _balances;
@@ -433,14 +433,15 @@ contract ERC20 is IERC20 {
 pragma solidity ^0.5.0;
 
 
-/**
- * @title TokenMintERC20Token
- * @author TokenMint (visit https://tokenmint.io)
- *
- * @dev Standard ERC20 token with burning and optional functions implemented.
- * For full specification of ERC-20 standard see:
- * https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
- */
+/** <br/>
+ *@title TokenMintERC20Token<br/>
+ *@author TokenMint (visit https://tokenmint.io)<br/>
+ *<br/>
+ *@dev Standard ERC20 token with burning and optional functions implemented.<br/>
+ *For full specification of ERC-20 standard see:<br/>
+ *https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md<br/>
+ */<br/>
+ 
 contract TokenMintERC20Token is ERC20 {
 
     string private _name;
@@ -498,8 +499,3 @@ contract TokenMintERC20Token is ERC20 {
       return _decimals;
     }
 }
-
-
-
-
-
