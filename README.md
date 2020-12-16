@@ -1,12 +1,15 @@
-/**
- *Submitted for verification at Etherscan.io on 2020-10-09
-*/
+
+### Contract Source Code (Solidity)
+
+``/**
+`` *Submitted for verification at Etherscan.io on 2020-10-09
+``*/
 
 pragma solidity ^0.5.0;
 
 /**
- * @dev Interface of the ERC20 standard as defined in the EIP. Does not include
- * the optional functions; to access them see `ERC20Detailed`.
+ <br>\* @dev Interface of the ERC20 standard as defined in the EIP. Does not include
+ <br>\* the optional functions; to access them see `ERC20Detailed`.
  */
 interface IERC20 {
     /**
